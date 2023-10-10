@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-Profile-page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        #nav{
+            background-color: black;
+            color: white;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        html,.box{
+            
+            background-color: rgb(172, 172, 171);
+        }
+        .box{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+        }
+        .lftpic{
+            max-height: 500px;
+            min-height: 400px;
+            max-width: 300px;
+            min-width: 250px;
+            background-color: dimgray;
+            margin: 30px;
+            border-radius: 15px;
+        }
+        .rbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+            margin: 20px;
+            border-radius: 15px;
+        }
+        .sech{
+            height: 30px;
+            max-width: 800px;
+            min-width: 500px;
+            background-color: dimgray;
+            margin-top: 50px;
+            border-radius: 15px;
+            padding-left: 10px;
+        }
+        .b{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px;
+        }
+        .b1, .b2, .b3{
+            max-width: 200px;
+            min-width: 160px;
+            max-height: 200px;
+            min-height: 170px;
+            background-color: dimgray;
+            margin: 50px;
+            border-radius: 15px;
+        }
+        .comd{
+            max-height: 200px;
+            min-height: 150px;
+            max-width: 800px;
+            min-width: 700px;
+            background-color: dimgray;
+            border-radius: 15px;
+        }
+    </style>
+    <div>
+        <article>
+    <div class="row" id="nav">
+        <div class="col-6"><img src="data:image/jpeg;base64,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" width="40" height="40" alt="github img"></div>
+        <div class="col-6"><h2>GITHUB</h2></div>
+    </div>
+    <div class="box">
+        <div class="lftpic"></div>
+        <div class="rbox">
+            <div class="sech">Search</div>
+            <div class="b">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+            <div class="comd"></div>
+        </div>
+    </div>    
+    </article>
+</div>
+</body>
+</html>
